@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: #f1f6fa;
+  -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+
+.titleBox {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+.bold {
+  font-family: "Pretendard-Black";
+  font-size: 32px;
+}
+
+.light {
+  font-family: "Pretendard-Regular";
+  font-size: 18px;
+  margin-top: 5px;
+}

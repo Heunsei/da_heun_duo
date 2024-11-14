@@ -1,0 +1,24 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../images/auth_bg_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.auth_box {
+  width: 500px;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgb(199, 242, 254);
+  background: linear-gradient(
+    90deg,
+    rgba(199, 242, 254, 1) 0%,
+    rgba(251, 252, 252, 1) 50%
+  );
+  -webkit-box-shadow: 7px 7px 6.3px 0px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 7px 7px 6.3px 0px rgba(0, 0, 0, 0.23);
+  box-shadow: 7px 7px 6.3px 0px rgba(0, 0, 0, 0.23);
+}

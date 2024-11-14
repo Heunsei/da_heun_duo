@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #808897;
+  font-family: "Pretendard-Light";
+}
+
+.container input {
+  padding: 10px 30px 10px 45px;
+  border-radius: 15px;
+  border: none;
+  background-color: #f0f2f6;
+  font-size: 24px;
+  background-position: 10px 10px;
+  background-size: 24px;
+  background-repeat: no-repeat;
+}
+
+.container p {
+  font-size: 12px;
+}

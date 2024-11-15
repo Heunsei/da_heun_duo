@@ -1,14 +1,13 @@
 "use client";
-import { AuthInputType } from "@/app/utils/type";
+//library
+import { ChangeEvent, Dispatch, SetStateAction, useEffect } from "react";
+//style
 import style from "./auth-input.module.css";
-import {
-  ChangeEvent,
-  Dispatch,
-  SetStateAction,
-  useEffect,
-  useState,
-} from "react";
 import { StaticImageData } from "next/image";
+//component
+//utils
+import { AuthInputType } from "@/app/utils/type";
+
 type inputType = keyof AuthInputType;
 
 export default function AuthInput({
@@ -21,6 +20,7 @@ export default function AuthInput({
   cautionary,
   backgroundImage,
   validator,
+  disable,
 }: {
   value: string;
   setValue: Dispatch<SetStateAction<string>>;
@@ -31,6 +31,7 @@ export default function AuthInput({
   cautionary: string | undefined;
   backgroundImage: StaticImageData;
   validator?: (value: string) => boolean;
+  disable?: boolean;
 }) {
   useEffect(() => {
     if (validator) {
@@ -41,6 +42,8 @@ export default function AuthInput({
   return (
     <div className={style.container}>
       <input
+        disabled={disable}
+        autoComplete="off"
         style={{ backgroundImage: `url(${backgroundImage.src})` }}
         value={value}
         name={authType}

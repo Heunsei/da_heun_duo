@@ -7,3 +7,12 @@
   font-family: "Pretendard-Regular";
   cursor: pointer;
 }
+
+.disable_container {
+  background-color: #808080;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 24px;
+  font-family: "Pretendard-Regular";
+}

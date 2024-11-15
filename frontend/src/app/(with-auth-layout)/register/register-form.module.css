@@ -1,12 +1,26 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-decoration: none;
-  }
-  
-  .container a {
-    text-decoration: none;
-    color: #02abfc;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.container a {
+  text-decoration: none;
+  color: #02abfc;
+}
+
+.emailVerify {
+  display: flex;
+  justify-content: space-between;
+}
+
+.emailVerify button {
+  font-family: "Pretendard-Black";
+  position: relative;
+  width: 80px;
+  height: 47.5px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}

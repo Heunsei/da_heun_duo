@@ -1,0 +1,27 @@
+.modal[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Pretendard-Regular";
+  text-align: center;
+  font-size: 24px;
+  padding: 30px;
+  gap: 30px;
+  z-index: 1;
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal button {
+  width: 200px;
+  height: 30px;
+  border-radius: 8px;
+}

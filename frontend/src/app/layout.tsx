@@ -24,9 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="kr">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <div>{children}</div>
+        <div id="modal-root"></div>
       </body>
     </html>
   );

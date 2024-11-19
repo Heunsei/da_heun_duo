@@ -1,0 +1,48 @@
+.left_navbar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 72px;
+  height: 100%;
+  overflow: hidden scroll;
+  flex-shrink: 0;
+  background-color: #d8d8d7;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tree {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  position: relative;
+  list-style: none;
+}
+
+.scroll_area {
+  padding: 12px 0 0;
+  user-select: none;
+  min-height: 0;
+  flex: 1 1 auto;
+  outline: 0;
+}
+
+.scroll_area::-webkit-scrollbar {
+  display: none;
+}
+
+.setting_area {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+}
+
+.divier {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 70%;
+}

@@ -1,0 +1,91 @@
+.container {
+    position: relative;
+    width: 72px;
+    height: 48px;
+    margin: 0 0 8px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: black;
+    width: 8px;
+    height: 48px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  
+  .semi_wrapper {
+    position: absolute;
+    left: 0;
+    top: 11px;
+    background-color: black;
+    width: 8px;
+    height: 24px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    opacity: 0; /* 처음에 보이지 않음 */
+    visibility: hidden; /* 처음에 비활성화 */
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .visible {
+    opacity: 1; /* 보이도록 설정 */
+    visibility: visible; /* 활성화 */
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover {
+      border-radius: 40%;
+    }
+  }
+  
+  .icon_selected {
+    width: 48px;
+    height: 48px;
+    background-color: #ffffff;
+    border-radius: 40%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .icon_indicator {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    left: 50px;
+    z-index: 1;
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: 50%;
+    left: 120%; /* 아이콘의 오른쪽에 표시 */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+    pointer-events: none; /* 툴팁에 마우스 이벤트가 닿지 않도록 */
+  }
+  

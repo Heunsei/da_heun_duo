@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Pretendard-Thin";
+}
+
+.text_container {
+  font-size: 24px;
+}
+
+.top_text {
+  font-size: 16px;
+}
+.bottom_text {
+  font-family: "Pretendard-Black";
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_container button {
+  font-family: "Pretendard-Black";
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #efefef;
+}

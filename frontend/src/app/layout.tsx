@@ -16,6 +16,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Music Shark",
   description: "-악기상어-",
+  icons : {
+    icon : '/fevicon.png'
+  }
 };
 
 export default function RootLayout({

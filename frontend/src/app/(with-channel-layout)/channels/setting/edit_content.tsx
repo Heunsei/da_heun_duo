@@ -1,7 +1,7 @@
 import style from "./edit_content.module.css";
-
+import { settingModalProps } from "@/app/utils/type";
 interface EditType {
-  nickname: string;
+  userName: string;
   email: string;
 }
 
@@ -10,9 +10,11 @@ type PropsType = keyof EditType;
 export default function EditContent({
   type,
   text,
+  openModal,
 }: {
   type: PropsType;
   text: string;
+  openModal: (modalProps: settingModalProps) => void;
 }) {
   return (
     <div className={style.container}>
@@ -21,7 +23,7 @@ export default function EditContent({
         <p className={style.bottom_text}>{text}</p>
       </div>
       <div className={style.button_container}>
-        <button>수정</button>
+        <button onClick={() => openModal(type)}>수정</button>
       </div>
     </div>
   );
